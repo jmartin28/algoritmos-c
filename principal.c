@@ -6,7 +6,6 @@
  */
 #include <stdio.h>
 
-
  int main(){
 
 	/*****permutar******/
@@ -59,18 +58,65 @@
 //	 printf("\nCantidad de errores de anio bisiesto es: %d", contBiError);
 
 
-	 int dinero;
+//	 int dinero;
+//
+//	 printf("\nIngrese cantidad dinero: ");
+//	 scanf("%d", &dinero);
+//
+//	 procesarBilletes(&dinero, 100);
+//	 procesarBilletes(&dinero, 50);
+//	 procesarBilletes(&dinero, 20);
+//	 procesarBilletes(&dinero, 10);
+//	 procesarBilletes(&dinero, 5);
+//	 procesarBilletes(&dinero, 2);
+//	 procesarBilletes(&dinero, 1);
 
-	 printf("\nIngrese cantidad dinero: ");
-	 scanf("%d", &dinero);
+	 /**Determinar si un caracter es un digito numerico**/
+//	 char a;
+//
+//	 printf("Ingrese caracter para ver si es numero: ");
+//	 scanf("%s", &a);
+//
+//	 if(esDigito(a)){
+//		 printf("es numerico");
+//	 }else{
+//		 printf("es caracter");
+//	 }
 
-	 procesarBilletes(&dinero, 100);
-	 procesarBilletes(&dinero, 50);
-	 procesarBilletes(&dinero, 20);
-	 procesarBilletes(&dinero, 10);
-	 procesarBilletes(&dinero, 5);
-	 procesarBilletes(&dinero, 2);
-	 procesarBilletes(&dinero, 1);
+	 /**Determinar si un caracter es una letra (función esLetra)**/
+//		 char a;
+//
+//	 	 printf("\nIngrese caracter para ver si es letra: ");
+//	 	 scanf("%s", &a);
+//
+//	 	 if(esLetra(a)){
+//	 		 printf("es letra");
+//	 	 }else{
+//	 		 printf("es numero");
+//	 	 }
+
+	 /**Determinar si un caracter es una letra mayuscula o minuscula**/
+
+//			 char a;
+//
+//		 	 printf("\nIngrese caracter para ver si es mayúscula: ");
+//		 	 scanf("%s", &a);
+//
+//		 	 if(esMayuscula(a)){
+//		 		 printf("es mayúscula");
+//		 	 }else if(esMinuscula(a)){
+//		 		 printf("es minúscula");
+//		 	 }
+
+	 /********Convertir un caracter a minúscula***********/
+		 char a;
+
+		 printf("\nIngrese mayúscula para pasarlo\na minúscula: ");
+		 scanf("%s", &a);
+
+		 char b= aMinuscula(a);
+
+		 printf("\n%c", b);
 
 	 return 0;
  }

@@ -15,7 +15,7 @@
  *3) Verificar que si una fecha el dia es 29 y el mes
  *es 2 entonces que el año sea bisiesto.
  *En caso contrario, mostrar un mje de error e informar, al
- *final del proceso, la cantidad de veces que
+ *final del proceso         , la cantidad de veces que
  *se registraron errores de este tipo   */
 
 void dividirFecha(long f, int* d , int* m, int* a){
