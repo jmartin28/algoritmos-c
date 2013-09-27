@@ -1,6 +1,5 @@
 /*
  * 4.4.2.5.c
- *
  *  Created on: 21/09/2013
  *      Author: Usuario
  */
@@ -11,7 +10,6 @@
  *determinar si una cadena es alfabeticamente
  *mayor, menor o igual que otra tenemos que
  * comparar uno a uno sus caracteres
- *
  *
  * */
 
