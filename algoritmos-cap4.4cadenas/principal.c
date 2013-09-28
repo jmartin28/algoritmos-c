@@ -38,15 +38,16 @@ int main (){
 //
 //	printf("%s", x);
 
-	char a[20]="c";
-	char b[20]="c";
+	char a[20]="za";
+	char b[20]="zb";
 
 	int resul = compararCadenas(a,b);
-	if(resul == 1) {
+
+	if(resul > 0) {
 		printf("A es mayor");
-	}else if(resul == -1){
+	}else if(resul < 0){
 		printf("B es mayor");
-	}else{
+	}else if(resul == 0){
 		printf("Iguales");
 	}
 
