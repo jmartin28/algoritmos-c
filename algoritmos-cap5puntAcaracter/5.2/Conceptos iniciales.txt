@@ -1,0 +1,16 @@
+5.2.1 Aritmética de direcciones
+
+Como el identificador de una cadena es equivalente a la 
+dirección de memoria del primero de sus caracteres y las
+direcciones de los caracteres subsiguientes son
+consecutivas entonces la dirección del i-ésimo
+carácter se puede calcular sumando el valor entero i 
+a dicho identificador.
+
+5.2.2 Prefijos y sufijos
+
+Decimos que la cadena p es prefijo de la cadena x si los
+primeros carácteres x coinciden con todos los caracteres
+de p. Análogamente, diremos que la cadena s es sufijo de 
+la cadena x si los últimos caracteres de x coinciden con
+la totalidad de los caracteres de s. 

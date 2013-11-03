@@ -1,0 +1,9 @@
+Hasta ahora hemos analizado funcioens que manipulan los caracteres 
+de las cadenas que reciben como parametro, pero no analizamos ninguna función
+que retorne una cadena de caracteres.
+
+En C las funciones no pueden retornar arrays, por lo tanto, seria incorrecto definir
+una función como la siquiente:
+
+char[] obtenerSaludo(); //daria error
+
