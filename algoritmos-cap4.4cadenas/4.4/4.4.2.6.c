@@ -16,13 +16,13 @@
 
 long cadenaAEntero(char s[]){
 
-	int i=0;
+	int i;
 
 	double num;
 
 	int longit = longitud(s);
 
-	for(int i=0; s[i] != '\0'; i++){
+	for(i=0; s[i] != '\0'; i++){
 
 		num += pow(10, longit - i -1) * s[i]-'\0';
 	}

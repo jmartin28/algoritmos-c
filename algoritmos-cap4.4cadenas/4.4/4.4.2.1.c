@@ -13,12 +13,7 @@ mayor o igual a la longitud de s mas 1.
 */
 
 
-void copiarCadena(char t[],char s[]){
-
-	int i=0;
-
-	while(s[i]!='\0'){
-		t[i]=s[i];
-		i++;
-	}
+//Version Compacta
+void copiarCadena(char* t,char* s){
+	while(*t++=*s++);
 }

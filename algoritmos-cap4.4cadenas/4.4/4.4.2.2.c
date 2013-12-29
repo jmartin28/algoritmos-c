@@ -11,12 +11,9 @@
  *la cadena que lo contiene
  * */
 
-int longitud(char s[]){
-
-	int i=0;
-
-	while(s[i]!='\0'){
-		i+=1;
-	}
+//Version Compacta
+int longitud(char* s){
+	int i;
+	for(i=0; s++; i++);
 	return i;
 }

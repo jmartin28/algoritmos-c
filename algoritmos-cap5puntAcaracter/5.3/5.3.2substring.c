@@ -27,8 +27,8 @@ char* substring(char* s, int desde, int hasta){
 	int n = hasta-desde;
 	char* ret = (char*) malloc(n+1);
 
-	int j=0;
-	for (int i=desde; i<hasta; i++){
+	int j=0, i;
+	for (i=desde; i<hasta; i++){
 		ret[i]=s[i];
 		j++;
 	}
