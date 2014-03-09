@@ -6,9 +6,6 @@
 void procesarBilletes(int*, int);
 
 int main(){
-
-
-
 //	char x[10]="hola que tal";
 //	char y[10]="hola";
 //	int verofalso = esPrefijo(x,y);
@@ -43,14 +40,13 @@ int main(){
 //	char* tok = strtok(s, "|");
 //
 //	while (tok!=NULL){
-//		//NULL de stdio.h representa el valor de una dirección de memoria nula
+//		//NULL de stdio.h representa el valor de una direcciï¿½n de memoria nula
 //		printf("%s \n", tok);
 //
 //		//llamadas subsiguientes
 //		tok = strtok(NULL, "|");
 //
 //	}
-
 
 	/********************TOKEN***********************/
 	int billete = 355;

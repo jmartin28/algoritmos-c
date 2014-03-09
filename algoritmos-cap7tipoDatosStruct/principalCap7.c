@@ -1,30 +1,21 @@
-#import <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 
 int main (){
-	long nroFactura;
-	int dia;
-	double importe;
-	char codCliente[5];
 
-	int acumDia[31];
+	int aCont[100], v; //v es el valor
+	inicializarContadores(aCont);
 
-	while(nroFactura != 0){
-		printf("Ingrese nroFactura, dia, importe y codCliente: ");
+	printf("1Ingresar valores: ");
+	scanf("%d", &v);
 
-		scanf("%l %d %f %s", &nroFactura, &dia, &importe, &codCliente);
-		acumDia[dia-1] += importe;
+
+	while(v >= 0){
+		aCont[v]=aCont[v]+1;
+		printf("2Ingresar valores: ");
+		scanf("%d", &v);
 	}
-
-	int i;
-	for(i=0;i<acumDia;i++){
-
-		printf("Se facturo el dia %d la suma de: %d ", acumDia[i]);
-
-	}
-
-
+	mostrarResultados(aCont);
 
 
 	return 0;
