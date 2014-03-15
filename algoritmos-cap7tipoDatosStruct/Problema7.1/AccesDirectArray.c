@@ -14,10 +14,10 @@
  * de un valor negativo.
  *
  * */
-void inicializarContadores(int a[]){
+void inicializarContadores(int aCont[]){
 	int i;
 	for(i=0;i<100;i++){
-		a[i]=0;
+		aCont[i]=0;
 	}
 }
 void mostrarResultados(int a[]){

@@ -1,22 +1,28 @@
 #include <stdint.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int main (){
 
-	int aCont[100], v; //v es el valor
-	inicializarContadores(aCont);
+	long nroFactura;
+	int dia;
+	double monto;
+	char codCliente[5];
 
-	printf("1Ingresar valores: ");
-	scanf("%d", &v);
+	double acumDia[31];
+	inicializarArray(acumDia);
 
+	printf("\n1Ingrese facturacion: ");
+	scanf("%ld %d %lf %s", &nroFactura, &dia, &monto, codCliente);
 
-	while(v >= 0){
-		aCont[v]=aCont[v]+1;
-		printf("2Ingresar valores: ");
-		scanf("%d", &v);
+	while(nroFactura != 0){
+		acumDia[dia-1]+=monto;
+		printf("\n2Ingrese facturacion: ");
+		scanf("%ld %d %lf %s", &nroFactura, &dia, &monto, codCliente);
 	}
-	mostrarResultados(aCont);
 
+	mostrarTotales(acumDia);//Total facturado por dia
+	diaMayorFacturacion(acumDia);
 
 	return 0;
 }
