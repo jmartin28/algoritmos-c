@@ -4,25 +4,19 @@
 
 int main (){
 
-	long nroFactura;
-	int dia;
-	double monto;
-	char codCliente[5];
+	int arr[50];
+	int len = 0;
 
-	double acumDia[31];
-	inicializarArray(acumDia);
+	agregar(arr, &len, 10);
+	agregar(arr, &len, 20);
+	agregar(arr, &len, 30);
+	agregar(arr, &len, 40);
 
-	printf("\n1Ingrese facturacion: ");
-	scanf("%ld %d %lf %s", &nroFactura, &dia, &monto, codCliente);
-
-	while(nroFactura != 0){
-		acumDia[dia-1]+=monto;
-		printf("\n2Ingrese facturacion: ");
-		scanf("%ld %d %lf %s", &nroFactura, &dia, &monto, codCliente);
+	int i;
+	for(i=0; i<len ;i++){
+		printf("\n%d", arr[i]);
 	}
 
-	mostrarTotales(acumDia);//Total facturado por dia
-	diaMayorFacturacion(acumDia);
 
 	return 0;
 }
