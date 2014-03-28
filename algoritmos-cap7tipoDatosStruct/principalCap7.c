@@ -7,15 +7,13 @@ int main (){
 	int arr[50];
 	int len = 0;
 
-	agregar(arr, &len, 10);
-	agregar(arr, &len, 20);
-	agregar(arr, &len, 30);
 	agregar(arr, &len, 40);
+	agregar(arr, &len, 50);
+	agregar(arr, &len, 60);
 
-	int i;
-	for(i=0; i<len ;i++){
-		printf("\n%d", arr[i]);
-	}
+	printf("\nPosicion es: %d", buscar(arr, len, 40));
+	printf("\nPosicion es: %d", buscar(arr, len, 50));
+	printf("\nPosicion es: %d", buscar(arr, len, 60));
 
 
 	return 0;
